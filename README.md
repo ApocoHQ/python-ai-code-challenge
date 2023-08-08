@@ -2,11 +2,9 @@
 
 This repository contains a coding exercise for new developers joining the AI/python development team.
 
-Fork this repository and create your own exercise!
-
 ## 📜 What we want you to build
 
-You will be building an autonomous AI agent that can reason over [Generative AI Python SDK](https://github.com/IBM/ibm-generative-ai) documentation.
+Your mission is to build an autonomous AI agent that can reason over [Generative AI Python SDK](https://github.com/IBM/ibm-generative-ai) documentation.
 The application (chatbot) should be able to answer questions on the documentation topics; as a bonus, your application can even code and browse the web!
 
 **Technology Stack**:
