@@ -23,6 +23,7 @@ The application (chatbot) should be able to answer questions on the documentatio
   - Handle edge cases and crashes.
   - Use streaming for responses.
   - (optional) Allow the user to upload file(s). 
+- (optional) Evaluation (how your solution performs, how precise it is in terms of retrieval quality).
 - (optional) The agent can lookup for specific facts on the web (Google / DuckDuckGo).
 - (optional) The agent can execute Python code.
 - (optional) The agent can work with files (CSV / PDF).
