@@ -1,3 +1,5 @@
+> ⚠️ OUTDATED ⚠️
+
 # 🐍 🤖 Python AI Code Challenge
 
 This repository contains a coding exercise for new developers joining the AI/python development team.
