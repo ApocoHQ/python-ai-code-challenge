@@ -1,47 +1,70 @@
-> ⚠️ OUTDATED ⚠️
+# 🐍🤖 Apoco AI Code Challenge
 
-# 🐍 🤖 Python AI Code Challenge
+Your mission is to build and evaluate a smart, LLM-powered Q&A Agent with inline citations.
+Show us your practical skills, theoretical understanding, and communication style!
 
-This repository contains a coding exercise for new developers joining the AI/python development team.
 
-## 📜 What we want you to build
+## 🛠️ Tech Stack
 
-Your mission is to build an autonomous AI agent that can reason over [Generative AI Python SDK](https://github.com/IBM/ibm-generative-ai) documentation.
-The application (chatbot) should be able to answer questions on the documentation topics; as a bonus, your application can even code and browse the web!
+- **Python 3.x**
+- **Lightweight Open-source LLM** (e.g., [Llama 3.1:8B](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct), [Granite 3.3:8B](https://huggingface.co/ibm-granite/granite-3.3-8b-instruct), or similar)
+- **Any open-source libraries** (HuggingFace, PyTorch, inference provider SDKs, etc.)
 
-**Technology Stack**:
-- Python (3.x)
-- LLM - it's up to you which one you pick.
-- [LangChain](https://python.langchain.com/).
-- Vector Store (ChromaDB / Pinecone / Milvus, ...).
+---
 
-### 🎯 Objectives
+## 🎯 Objectives
 
-- Create an application that allows the user to query our SDK documentation.
-  - The agent remembers the conversation context.
-  - The agent handles large conversations.
-  - Every response related to the SDK documentation must contain sources (relevant links to the documentation page).
-- Introduce UI for communication with the agent ([Streamlit](https://streamlit.io/) / [React](https://react.dev/) whatever you want!)
-  - Handle edge cases and crashes.
-  - Use streaming for responses.
-  - (optional) Allow the user to upload file(s). 
-- (optional) Evaluation (how your solution performs, how precise it is in terms of retrieval quality).
-- (optional) The agent can lookup for specific facts on the web (Google / DuckDuckGo).
-- (optional) The agent can execute Python code.
-- (optional) The agent can work with files (CSV / PDF).
-- (optional) One can interact with the agent via CLI.
-- (optional) One can interact with the agent via API (Rest/gRPC).
+> !IMPORTANT
+> You must do the agent implementation by yourself; using existing solutions from frameworks is not allowed.
 
-### 🔗 Links
+### 1. Build a RAG-based Q&A Agent
+- Retrieve relevant context for each user question from an external source (e.g., Wikipedia).
+- Generate answers **with inline citations** referencing the retrieved sources.
+- Minimize hallucinations and handle irrelevant or malicious inputs robustly.
+- Clearly indicate when an answer cannot be provided based on available sources.
 
-- GenAI Python SDK (https://github.com/IBM/ibm-generative-ai) with HTML documentation (https://ibm.github.io/ibm-generative-ai/).
-- (optional) GenAI Node.js SDK (https://github.com/IBM/ibm-generative-ai-node-sdk).
+### 2. Evaluation & Analysis
+- Design and implement an evaluation pipeline (automated or manual) to assess your agent’s performance.
+  - Use relevant metrics (e.g., factual accuracy, citation correctness, robustness to adversarial input).
+  - Include a small set of test questions and report the results.
+- Error analysis: Why the agent can fail in some cases and why is it happening?
 
-### 📝 Notes
-- Be creative. Everything extra/custom is appreciated. 🦄
-- You can use more technologies, but those mentioned are required.
-- Explain your decisions and choices. We want to see you know what you are doing.
-- Document your code, mainly the parts related to LLM (parameters, sizes, etc.).
-- Describe how the final application works in general.
+### 3. Documentation & Reflection
 
-Feel free to ask us if you have any doubts or if you face any problems!
+- **Code documentation:** Comment your project and document the complex parts.
+- **Design decisions:** Briefly explain your choices (model, retrieval method, prompt design, etc.).
+- **Ethical & safety considerations:** Discuss how you addressed hallucination, bias, and user safety.
+- **Improvement ideas:** Suggest concrete ways to further improve your agent.
+
+---
+
+## 🌟 Bonus Tasks (Optional)
+
+- **Dockerize** your application.
+- **BeeAI Integration:** Wrap your agent in a BeeAI Platform-compatible server so it can be registered and used locally (UI/CLI).
+- **Configurability:** Allow switching between models, data sources, etc.
+- **Experiment with fine-tuning.**
+- **Your creative idea! 💡**
+
+---
+
+## 🧑‍⚖️ Assessment Criteria
+
+- **Technical correctness:** Does the agent work as specified? Are citations accurate?
+- **Code quality:** Is the code clean, modular, and well-documented?
+- **Evaluation rigor:** Are the evaluation and error analysis meaningful?
+- **Communication:** Are design decisions and ethical considerations clearly explained?
+- **Creativity & initiative:** Are there thoughtful improvements or extra features?
+
+---
+
+## 📝 Submission Guidelines
+
+- Create a private GitHub repository and invite **@Tomas2D**.
+
+---
+
+## ❓ Need Clarification?
+
+Feel free to ask questions (tomas.dvorak@apoco.com).
+We value both technical skill and critical thinking.
