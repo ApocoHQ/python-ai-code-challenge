@@ -61,6 +61,7 @@ Show us your practical skills, theoretical understanding, and communication styl
 ## 📝 Submission Guidelines
 
 - Create a private GitHub repository and invite **@Tomas2D**.
+- Let us know when the project is ready by sending an email to **tomas.dvorak@apoco.com**.
 
 ---
 
