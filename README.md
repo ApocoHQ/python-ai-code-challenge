@@ -49,7 +49,6 @@ This section is a core part of the challenge — not an afterthought.
 ## 🌟 Bonus Tasks (Optional)
 
 - **Dockerize** your application.
-- **AgentStack Integration:** Wrap your agent as an AgentStack-compatible server so it can be registered and used locally — this is our preferred approach and how we build agents internally.
 - **Configurability:** Allow switching between models, data sources, etc.
 - **Experiment with fine-tuning.**
 - **Your creative idea! 💡**
